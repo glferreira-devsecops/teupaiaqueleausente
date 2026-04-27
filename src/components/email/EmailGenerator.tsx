@@ -1,7 +1,7 @@
 
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Copy, RefreshCw, Lock } from "lucide-react";
+import { Copy, RotateCw, LockKeyhole } from "lucide-react";
 import { toast } from "sonner";
 import { Skeleton } from "@/components/ui/skeleton";
 import { motion } from "framer-motion";
@@ -49,7 +49,7 @@ const EmailGenerator = ({ email, generatingEmail, onGenerateNew }: EmailGenerato
               whileTap={{ scale: 0.9 }}
               aria-label="Email criptografado e seguro"
             >
-              <Lock className="h-4 w-4" />
+              <LockKeyhole className="h-4 w-4" />
             </motion.div>
           </div>
         )}
@@ -72,7 +72,7 @@ const EmailGenerator = ({ email, generatingEmail, onGenerateNew }: EmailGenerato
           onClick={onGenerateNew}
           disabled={generatingEmail}
         >
-          <RefreshCw className={`h-4 w-4 mr-1 ${generatingEmail ? "animate-spin" : ""} group-hover:scale-110 transition-transform`} />
+          <RotateCw className={`h-4 w-4 mr-1 ${generatingEmail ? "animate-spin" : ""} group-hover:scale-110 transition-transform`} />
           Novo
         </Button>
       </div>

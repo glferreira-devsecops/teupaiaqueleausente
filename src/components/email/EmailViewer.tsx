@@ -5,9 +5,9 @@ import {
 
 import { format } from 'date-fns';
 import {
-  ChevronLeft,
+  ChevronLeftIcon,
   Clock,
-  File,
+  FileIcon,
   Mail,
   Trash2,
 } from 'lucide-react';
@@ -81,7 +81,7 @@ export default function EmailViewer({ email, onClose, onDeleteEmail }: EmailView
     <div className="flex flex-col h-full">
       <div className="flex items-center justify-between p-4 border-b">
         <Button variant="ghost" size="sm" onClick={onClose}>
-          <ChevronLeft className="h-4 w-4 mr-2" />
+          <ChevronLeftIcon className="h-4 w-4 mr-2" />
           Voltar
         </Button>
         <div className="flex items-center space-x-2">
@@ -91,7 +91,7 @@ export default function EmailViewer({ email, onClose, onDeleteEmail }: EmailView
             onClick={handlePrint}
             disabled={printing}
           >
-            <File className="h-4 w-4" />
+            <FileIcon className="h-4 w-4" />
           </Button>
           <Button 
             variant="ghost" 

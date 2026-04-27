@@ -9,7 +9,6 @@ import EasterEgg from '@/components/EasterEgg';
 import { useTheme } from '@/components/theme/theme-provider';
 
 export default function AppFooter() {
-  const { theme } = useTheme();
   
   return (
     <footer className="bg-card border-t py-6 relative z-10">

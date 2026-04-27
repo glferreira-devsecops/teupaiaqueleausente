@@ -71,7 +71,6 @@ export default function Index() {
   const [messages, setMessages] = useState<EmailType[]>([]);
   const [checkingEmail, setCheckingEmail] = useState(false);
   const [isLoaded, setIsLoaded] = useState(false);
-  const [loading, setLoading] = useState(false);
   const { showConsent, acceptCookies } = useCookieConsent();
 
   // Verificar por novos emails

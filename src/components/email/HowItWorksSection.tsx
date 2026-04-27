@@ -1,6 +1,6 @@
 
 import { motion } from "framer-motion";
-import { InfoIcon } from "lucide-react";
+import { Info } from "lucide-react";
 
 export default function HowItWorksSection() {
   return (
@@ -13,7 +13,7 @@ export default function HowItWorksSection() {
       <div className="absolute -bottom-16 -left-16 w-32 h-32 bg-gradient-to-tr from-pink-300/20 to-purple-300/20 rounded-full blur-3xl pointer-events-none" />
       
       <h2 className="text-xl font-semibold mb-4 flex items-center">
-        <InfoIcon className="h-5 w-5 mr-2 text-purple-500" />
+        <Info className="h-5 w-5 mr-2 text-purple-500" />
         Como funciona?
       </h2>
       

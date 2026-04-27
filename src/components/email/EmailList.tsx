@@ -3,7 +3,7 @@ import { useMemo } from 'react';
 import { format } from 'date-fns';
 import {
   Mail,
-  RefreshCw,
+  RotateCw,
   Trash2,
 } from 'lucide-react';
 
@@ -43,7 +43,7 @@ export default function EmailList({
         <div className="flex items-center justify-between">
           <h3 className="text-lg font-semibold">Caixa de Entrada</h3>
           <Button variant="ghost" size="icon" onClick={onCheckEmails} disabled={checkingEmail}>
-            <RefreshCw className={cn('h-4 w-4', checkingEmail && 'animate-spin')} />
+            <RotateCw className={cn('h-4 w-4', checkingEmail && 'animate-spin')} />
           </Button>
         </div>
       </CardHeader>
@@ -51,7 +51,7 @@ export default function EmailList({
       <CardContent className="flex-grow p-0">
         {checkingEmail ? (
           <div className="flex items-center justify-center h-full">
-            <RefreshCw className="w-6 h-6 animate-spin text-muted-foreground" />
+            <RotateCw className="w-6 h-6 animate-spin text-muted-foreground" />
           </div>
         ) : sortedEmails.length === 0 ? (
           <div className="flex flex-col items-center justify-center h-full text-center p-4">
